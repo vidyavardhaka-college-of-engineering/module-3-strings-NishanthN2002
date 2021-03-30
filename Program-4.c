@@ -11,14 +11,19 @@
 #include <stdio.h>
 int main()
 {
- int i,len;
- char str[50];
-    // Declare the required variables
-    printf("Enter a string: ");
-    scanf("%s",str);
-    for(i=0; str[i]!='\0'; ++i);
-    len=i;
-       printf("The length of string =%d",len );
-       //Complete the missing code in result printing statement
-    return 0;
+  int c = 0, count = 0;
+  char s[1000];
+
+  printf("Input a string\n");
+  gets(s);
+
+  while (s[c] != '\0') {
+    if (s[c] == 'a' || s[c] == 'A' || s[c] == 'e' || s[c] == 'E' || s[c] == 'i' || s[c] == 'I' || s[c] =='o' || s[c]=='O' || s[c] == 'u' || s[c] == 'U')
+      count++;
+    c++;
+  }
+
+  printf("Number of vowels in the string: %d", count);
+
+  return 0;
 }
