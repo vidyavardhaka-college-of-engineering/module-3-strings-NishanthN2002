@@ -12,14 +12,14 @@
 int main() 
 {
 	char str1[50], str2[50];
-	int i;
-	printf("Enter a string-1: ");
+	int i,n;
+	printf("Enter a string-");
 	scanf("%s",str1);
-	for ()                  //Complete the code in for-loop & copy logic
+	for (i=0;str[i]!=0;i++)                  //Complete the code in for-loop & copy logic
   {                          
-		str2[i]= ;
+		str2[i]=str[i] ;
 	}
-	str2[i]= ;                  //Complete the statement
+	str2[i]= '\0';                  //Complete the statement
 	printf("The copied String-2 is %s",str2);
 	return 0;
 }
